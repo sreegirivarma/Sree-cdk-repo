@@ -14,3 +14,11 @@ jobs:
         run : npm ci
       - name: Run tests
         run : npm test
+name: deploy
+  runs-on: ubuntu-latest
+  steps:
+      - name: buid project
+        run : npm run build
+      - name: deploy
+        run: echo "deploying"
+
