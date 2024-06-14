@@ -49,6 +49,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
+      - name: Bootstrap CDK environment
+        run: npx cdk bootstrap aws://823240658936/us-east-1
+
       - name: Deploy CDK application
         env:
           AWS_REGION: ${{ env.AWS_REGION }}
