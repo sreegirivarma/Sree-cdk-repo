@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "skipLibCheck": true,
     "target": "ES2020",
     "module": "CommonJS",
     "lib": ["ES2020"],
     "outDir": "dist",
-    "rootDir": "src",
+    "rootDir": ".",
     "strict": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
   },
-  "include": ["src/**/*.ts"],
+  "include": ["bin/**/*.ts", "lib/**/*.ts"],
   "exclude": ["node_modules"]
 }
